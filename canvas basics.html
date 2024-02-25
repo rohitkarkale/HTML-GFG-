@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>canvas basics</title>
+    <link rel="icon" href="https://cdn-icons-png.flaticon.com/128/9698/9698000.png" type="image"
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    body{
+        background-color: #333;
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh; 
+    }
+    canvas{
+        border-radius: 10px;
+        background-color: white;
+        width: 80%;
+        height: 80%;
+        
+    }
+
+    
+
+    
+</style>
+
+<body>
+    <canvas id="canvas"></canvas>
+</body>
+<script>
+    const canvas = document.getElementById('canvas')
+    const ctx = canvas.getContext('2d')
+
+    // ctx.fillStyle="purple"
+    // ctx.fillRect(20,20,150,80)
+
+    ctx.linewidth=5;
+    ctx.strokeStyle="green";
+    ctx.strokeRect(20,20,80,30);
+
+    // ctx.linewidth=5 
+    // ctx.strokeStyle=""
+    // ctx.strokeRect(20,20,80,30)
+    ctx.linewidth=5
+    ctx.strokeStyle="red"
+    ctx.strokeRect(10,90,100,40)
+
+    
+    
+</script>
+</html>
